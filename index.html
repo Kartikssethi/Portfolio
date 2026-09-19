@@ -1226,12 +1226,13 @@
   </form>
 </section>
 
+<!-- config.js is gitignored and provides window.GEMINI_API_KEY locally; see config.example.js -->
+<script src="config.js"></script>
 <script>
 (function(){
   "use strict";
 
-  // Paste a real key here locally to test; do not commit a real value.
-  var GEMINI_API_KEY = "";
+  var GEMINI_API_KEY = window.GEMINI_API_KEY || "";
   var GEMINI_MODEL = "gemini-3.6-flash";
   var GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/"
     + GEMINI_MODEL + ":generateContent?key=" + GEMINI_API_KEY;
