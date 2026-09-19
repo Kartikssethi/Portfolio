@@ -1184,11 +1184,13 @@
   }
   #kbInput{
     flex:1; resize:none; border:1px solid var(--line); border-radius:8px; padding:.55rem .7rem;
-    font-family:var(--sans); font-size:.88rem; color:var(--ink); background:var(--bg); max-height:88px;
+    font-family:var(--sans); font-size:.88rem; color:var(--ink); background:var(--bg);
+    min-height:2.5rem; max-height:88px;
   }
   #kbInput:focus-visible{ outline:2px solid var(--focus); outline-offset:1px; }
   #kbSend{
-    flex:none; background:var(--accent); color:#fff; border:0; border-radius:8px; padding:0 1rem;
+    flex:none; display:inline-flex; align-items:center; justify-content:center; height:2.5rem;
+    background:var(--accent); color:#fff; border:0; border-radius:8px; padding:0 1.1rem;
     font-size:.85rem; font-weight:600;
   }
   #kbSend:disabled{ opacity:.5; cursor:default; }
